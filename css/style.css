@@ -1,0 +1,273 @@
+/* General Reset */
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+/*  */
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: hsl(210, 10%, 33%);
+}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+/* Start Header */
+.main-header {
+  padding-top: 13rem;
+  padding-bottom: 8rem;
+  background-image: url("../images/bg-header-desktop.png");
+  background-size: cover;
+}
+.main-header .container {
+  text-align: center;
+}
+.header-logo {
+  width: 12.6rem;
+  height: 12.6rem;
+  display: inline-block;
+  margin-bottom: 7rem;
+}
+.primary-heading {
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.section-heading {
+  font-size: 3.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.main-header .section-desc {
+  margin-bottom: 5rem;
+}
+.section-desc {
+  line-height: 1.8;
+  margin-bottom: 8rem;
+  color: hsl(201, 11%, 66%);
+}
+.button {
+  font-weight: 600;
+  color: white;
+  padding: 2.4rem 5.2rem;
+  border: none;
+  border-radius: 100vmax;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.button:not(:last-child) {
+  margin-right: 2rem;
+}
+.button.cyan {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 2rem 2rem -1rem hsl(171, 66%, 90%);
+}
+.button.blue {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 2rem 2rem -1rem hsl(233, 100%, 90%);
+}
+.button:hover,
+.button:active {
+  opacity: 0.8;
+}
+/* End Header */
+
+/* Start Section Track */
+.section-track {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.section-text-box {
+  text-align: center;
+}
+.main-features {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  column-gap: 4rem;
+}
+.main-features-img {
+  margin-left: -5rem;
+  width: 100%;
+}
+.features {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.feature-heading {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.feature-desc {
+  line-height: 1.8;
+  color: hsl(201, 11%, 66%);
+}
+/* End Section Track */
+/* Start Section Access */
+.section-access {
+  padding: 8rem 0;
+}
+.section-access .container {
+  text-align: center;
+}
+.access-img {
+  width: 70%;
+}
+/* End Section Access */
+/* Start Supercharge Section */
+.section-supercharge {
+  padding: 0 0 8rem 0;
+}
+.workflow-steps {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+.workflow-icon {
+  margin-bottom: 3rem;
+}
+.workflow-heading {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.workflow-desc {
+  color: hsl(201, 11%, 66%);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+/* End Supercharge Section */
+/* Start our-clients Section */
+.section-our-clients {
+  padding: 8rem 0;
+}
+.section-our-clients .container {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+}
+.our-client-logo {
+  height: 4rem;
+}
+/* End our-clients Section */
+/* Start Platform Section */
+.section-platform {
+  padding-block: 8rem;
+  text-align: center;
+}
+/* end Platform Section */
+/*  */
+footer {
+  background-color: hsl(220, 18%, 97%);
+  padding: 3rem 0;
+  color: hsl(210, 10%, 33%);
+  display: flex;
+  gap: 20rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  height: 4rem;
+}
+
+.navigation-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10rem;
+  row-gap: 1rem;
+  transition: all 0.3s;
+}
+.navigation-list a:link,
+.navigation-list a:visited {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+.navigation-list a:hover,
+.navigation-list a:active {
+  color: hsl(171, 66%, 44%);
+}
+.social-icons-list {
+  display: flex;
+  gap: 2.2rem;
+}
+
+.social-icon-item a svg:hover path {
+  fill: hsl(171, 66%, 44%);
+  transition: all 0.3s;
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 55%;
+  }
+
+  .main-header,
+  section {
+    padding-inline: 4rem;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+  }
+  .button:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  .main-features {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main-features-img {
+    margin-left: 0rem;
+    width: 100%;
+  }
+  .features {
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 7rem;
+  }
+  .access-img {
+    width: 100%;
+  }
+  .workflow-steps {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .section-our-clients .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .footer-logo {
+    height: 6rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+  }
+  .navigation-list {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    margin-bottom: 3rem;
+  }
+}
